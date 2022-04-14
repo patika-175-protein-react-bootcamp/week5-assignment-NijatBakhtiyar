@@ -1,15 +1,19 @@
 /* eslint-disable require-jsdoc */
 import React, { useState } from "react";
 import { Formik } from "formik";
+// REACT TOASTIFY
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import UnderlineIcon from "../constant/icons/underlineIcon";
+// YUP CONTROL
 import { RegisterSchema } from "../constant/registerSchema";
 import ColorMode from "../components/colorMode";
 import { useAuthContex } from "../context/authContext";
+// GET ICONS
+import UnderlineIcon from "../constant/icons/underlineIcon";
 import LoadingIcon from "../constant/icons/loadingIcon";
 
 function Register() {
+  // GET PAGE MODE FROM CONTEXT
   const { mode, setRegisterForm } = useAuthContex();
   const [loading, setLoading] = useState(false);
 
@@ -49,6 +53,7 @@ function Register() {
             touched,
           }) => (
             <form onSubmit={handleSubmit}>
+              {/* FORM INPUTS */}
               <div className="row">
                 <div className={values.first_name ? "form-group" : "form-group required"}>
                   <label>İSİM</label>

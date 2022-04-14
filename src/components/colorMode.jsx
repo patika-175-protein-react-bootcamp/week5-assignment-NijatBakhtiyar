@@ -1,9 +1,11 @@
 import React from "react";
+import { useAuthContex } from "../context/authContext";
+// GET ICONS
 import DarkModeIcon from "../constant/icons/darkModeIcon";
 import LightModeIcon from "../constant/icons/lightModeIcon";
-import { useAuthContex } from "../context/authContext";
 
 function ColorMode() {
+    // GET MODE FROM CONTEXT
     const { changeMode, mode } = useAuthContex();
 
     return (

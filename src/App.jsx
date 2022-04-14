@@ -7,8 +7,10 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
+    // AUTH CONTEXT PROVIDER
     <AuthProvider>
       <AuthForms />
+       {/* TOAST COMPONENT */}
       <ToastContainer />
     </AuthProvider>
   );

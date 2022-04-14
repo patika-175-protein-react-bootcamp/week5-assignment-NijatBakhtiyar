@@ -1,10 +1,12 @@
 import React from "react";
+import { useAuthContex } from "../context/authContext";
+// GET ICONS
 import BigRhomb from "../constant/icons/bigRhomb";
 import PatikaIcon from "../constant/icons/patikaIcon";
 import SmallRhomb from "../constant/icons/smallRhomb";
-import { useAuthContex } from "../context/authContext";
 
 function PatikaInfo() {
+    // GET PAGE MODE FROM CONTEXT
     const { mode } = useAuthContex();
 
     return (

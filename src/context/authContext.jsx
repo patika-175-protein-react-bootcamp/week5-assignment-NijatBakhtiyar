@@ -4,11 +4,11 @@ import React, { useContext, useState } from "react";
 const AuthContext = React.createContext();
 
 function AuthProvider({ children }) {
+    // GET REGISTER FORM INPUTS VALUE
     const [registerForm, setRegisterForm] = useState(null);
     const [mode, setMode] = useState("light");
 
-    console.log(registerForm);
-
+    // CHANGE PAGE MODE
     function changeMode() {
         if (mode === "light") {
             setMode("dark");

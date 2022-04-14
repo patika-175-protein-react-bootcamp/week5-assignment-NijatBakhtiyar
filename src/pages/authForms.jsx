@@ -5,6 +5,7 @@ import "../styles/authForms.scss";
 import {useAuthContex} from "../context/authContext";
 
 function AuthForms() {
+  // GET PAGE MODE FROM CONTEXT
   const { mode } = useAuthContex();
 
   return (
