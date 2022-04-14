@@ -5,7 +5,7 @@ import "../styles/authForms.scss";
 import {useAuthContex} from "../context/authContext";
 
 function AuthForms() {
-  const {mode} = useAuthContex();
+  const { mode } = useAuthContex();
 
   return (
     <div className={`auth-forms ${mode}`}>

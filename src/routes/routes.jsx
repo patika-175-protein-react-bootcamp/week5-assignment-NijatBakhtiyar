@@ -6,6 +6,7 @@ function Routers() {
     return (
         <Routes>
             <Route path="/auth" element={<Register />} />
+            <Route path="*" element={<Register />} />
         </Routes>
     );
 }
